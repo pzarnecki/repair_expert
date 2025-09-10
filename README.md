@@ -58,10 +58,9 @@ app/
 ├── config.py           # Ustawienia aplikacji (base URL, partner ID itp.)
 ├── main.py             # Główna aplikacja FastAPI (punkt wejścia)
 
-💡 Możesz dodać też:
-- ✍️ informacje o `Dockerfile` i `docker-compose.yml`,
-- 📘 dokumentację API (FastAPI generuje ją automatycznie pod `/docs`),
-- 🔍 roadmapę (`v1: link4`, `v2: PZU`, `v3: płatność`, itd.).
+💡 Do dodania później:
+- ✍️ dodam informację, jak uruchomić   `Dockerfile` i `docker-compose.yml`,
+- 📘 dokumentację API (FastAPI generuje ją automatycznie pod `/docs`), to się nam przyda jak projekt będzie się rozwijał
 
 client.py
 jeden punkt wejścia z poziomu API (client.prepare(...), client.calculate(...))
