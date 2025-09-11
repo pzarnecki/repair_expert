@@ -1,3 +1,26 @@
+from pydantic import BaseModel
+from datetime import date
+
+class CalculationCreate(BaseModel):
+    first_name: str
+    last_name: str
+    start_date: date
+    license_plate: str
+    car_make: str
+    car_model: str
+    car_year: int
+    insurance_formula: int  # 11 = OC, 13 = OC + AC
+
+class CalculationResponse(BaseModel):
+    calculation_id: str
+    premium: float
+
+
+
+
+'''
+Wariant pod api
+
 from pydantic import BaseModel, Field
 from datetime import date
 
@@ -10,7 +33,7 @@ class CalculationResponse(BaseModel):
     calculation_id: str = Field(..., description="Identyfikator kalkulacji (UUID)")
     premium: float = Field(..., description="Wyliczona składka OC/AC w zł")
 
-
+'''
 
 
 '''

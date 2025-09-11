@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator ubezpieczenia</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; }
+    input, select { width: 100%; padding: 10px; margin: 10px 0; }
+    button { padding: 10px 20px; margin-top: 10px; }
+    #result { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1>Kalkulator ubezpieczenia</h1>
+
+  <form id="calcForm">
+    <label>Imię: <input type="text" name="first_name" required></label>
+    <label>Nazwisko: <input type="text" name="last_name" required></label>
+    <label>Data startu polisy: <input type="date" name="start_date" required></label>
+    <label>Numer rejestracyjny: <input type="text" name="license_plate" required></label>
+    <label>Marka pojazdu: <input type="text" name="car_make" required></label>
+    <label>Model pojazdu: <input type="text" name="car_model" required></label>
+    <label>Rok produkcji: <input type="number" name="car_year" min="1980" max="2025" required></label>
+    <label>Typ ubezpieczenia:
+      <select name="insurance_formula">
+        <option value="11">OC</option>
+        <option value="13">OC + AC</option>
+      </select>
+    </label>
+    <button type="submit">Znajdź polisę</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const form = document.getElementById('calcForm');
+    const resultDiv = document.getElementById('result');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      data.car_year = parseInt(data.car_year);
+      data.insurance_formula = parseInt(data.insurance_formula);
+
+      try {
+        const res = await fetch("http://localhost:8000/api/link4/calculate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        if (res.ok) {
+          resultDiv.innerHTML = `Składka: <strong>${result.premium.toFixed(2)} zł</strong><br>ID kalkulacji: ${result.calculation_id}`;
+        } else {
+          resultDiv.innerHTML = `<span style="color:red;">Błąd: ${result.detail || "nieznany błąd"}</span>`;
+        }
+
+      } catch (err) {
+        resultDiv.innerHTML = `<span style="color:red;">Błąd połączenia z API</span>`;
+      }
+    });
+  </script>
+
+</body>
+</html>

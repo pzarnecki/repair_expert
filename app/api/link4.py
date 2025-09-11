@@ -1,4 +1,30 @@
+# wariant pod kalkulację - demo
+from fastapi import APIRouter
+from app.schemas.calculation import CalculationCreate, CalculationResponse
+import uuid
+import random
+
+router = APIRouter()
+
+@router.post("/calculate", response_model=CalculationResponse)
+def calculate(data: CalculationCreate):
+    # Prosta logika demo: składka zależna od roku auta + losowość
+    base_premium = 1000
+    age_penalty = max(0, (2025 - data.car_year)) * 20
+    random_bonus = random.uniform(-100, 150)
+
+    final_premium = base_premium + age_penalty + random_bonus
+    final_premium = round(final_premium, 2)
+
+    return CalculationResponse(
+        calculation_id=str(uuid.uuid4()),
+        premium=final_premium
+    )
+
+
+'''
 # app/api/link4.py
+# wariant pod api link 5
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session
@@ -47,3 +73,5 @@ def calculate_insurance(data: CalculationCreate, session: Session = Depends(get_
     session.commit()
 
     return {"calculation_id": calculation_id, "premium": premium}
+
+'''
