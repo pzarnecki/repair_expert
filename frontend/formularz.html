@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/css/globals.css" />
+    <link rel="stylesheet" href="/static/css/formularz.css" />
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        form {
+            width: 400px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+
+
+  </head>
+  <body>
+    <div class="po-wyszukaniu-oferty">
+      <img class="logo-oblicz" src="img/logo-oblicz-ubezpieczenie2-1.png" />
+      <div class="navbar">
+        <div class="text-wrapper">Samochód</div>
+        <div class="text-wrapper">Podróże</div>
+        <div class="text-wrapper">FAQ</div>
+        <div class="text-wrapper">Kontakt</div>
+      </div>
+      <div class="rectangle"></div>
+
+      <div class="text-wrapper-2">Kalkulator OC i AC</div>
+      <div class="text-wrapper-3">
+
+
+
+  <!--  <script>
+        document.getElementById("insurance-form").addEventListener("submit", async function(event) {
+            event.preventDefault();
+
+            const BASE_URL = window.location.origin;
+
+            const formData = {
+                first_name: document.getElementById("first_name").value,
+                last_name: document.getElementById("last_name").value,
+                license_plate: document.getElementById("license_plate").value,
+                car_make: document.getElementById("car_make").value,
+                car_model: document.getElementById("car_model").value,
+                car_year: parseInt(document.getElementById("car_year").value),
+                start_date: document.getElementById("start_date").value,
+                insurance_formula: parseInt(document.getElementById("insurance_formula").value)
+            };
+
+            try {
+                const response = await fetch(`${BASE_URL}/api/link4/calculate`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (!response.ok) {
+                    throw new Error("Błąd połączenia z API. Sprawdź dane lub spróbuj ponownie później.");
+                }
+
+                const data = await response.json();
+                document.getElementById("result").innerText =
+                    `✅ Składka: ${data.premium.toFixed(2)} zł\nID kalkulacji: ${data.calculation_id}`;
+            } catch (error) {
+                document.getElementById("result").innerText = `❌ Wystąpił błąd: ${error.message}`;
+            }
+        });
+    </script>
+
+    --!>
+      </div>
+
+
+        <div class="text-wrapper-9">Kalkulator OC / AC</div>
+      <img class="ellipse" src="img/ellipse-19.svg" />
+      <img class="vector" src="img/vector-3-2.svg" />
+      <div class="rectangle-2"></div>
+      <div class="text-wrapper-10">Mapa strony</div>
+      <div class="text-wrapper-11">Informacje</div>
+
+      <div class="text-wrapper-13">Obserwuj nas</div>
+      <div class="text-wrapper-14">Lorem ipsum dolor</div>
+      <div class="frame">
+        <div class="text-wrapper-15">Samochód</div>
+        <div class="text-wrapper-16">Podróże</div>
+        <div class="text-wrapper-16">FAQ</div>
+        <div class="text-wrapper-16">Kontakt</div>
+      </div>
+      <div class="frame-2">
+        <p class="text-wrapper-17">Sed ut perspiciatis unde om</p>
+        <p class="text-wrapper-18">Sed ut perspiciatis unde om</p>
+        <p class="text-wrapper-18">Sed ut perspiciatis unde om</p>
+      </div>
+      <div class="frame-3">
+        <div class="text-wrapper-15">Regulamin</div>
+        <div class="text-wrapper-19">Polityka prywatności</div>
+      </div>
+      <div class="frame-4">
+        <p class="text-wrapper-17">Sed ut perspiciatis unde om</p>
+        <p class="text-wrapper-18">Sed ut perspiciatis unde om</p>
+        <p class="text-wrapper-18">Sed ut perspiciatis unde om</p>
+        <p class="text-wrapper-18">Sed ut perspiciatis unde om</p>
+      </div>
+      <p class="internetowy-agent">
+        Internetowy Agent Ubezpieczeniowy Sp. z o.o.<br />ul. Ogrodowa 58<br />00-876 Warszawa
+      </p>
+      <p class="pomoc">pomoc@obliczubezpeiczenia.pl<br />+48 00 00 00 000</p>
+      <div class="text-wrapper-20">2025 © Oblicz Ubezpieczenie</div>
+      <div class="text-wrapper-21">Stworzone przez twojanowawww.pl</div>
+      <img class="img" src="img/logo-oblicz-ubezpieczenie2-white-1.png" />
+      <div class="facebook">
+        <div class="group"><img class="vector-2" src="img/vector-4.svg" /></div>
+      </div>
+      <div class="youtube-logo">
+        <div class="vector-wrapper"><img class="vector-3" src="img/image.svg" /></div>
+      </div>
+      <div class="linkedin">
+        <div class="group-2">
+          <img class="vector-4" src="img/vector.svg" /> <img class="vector-5" src="img/vector-3.svg" />
+        </div>
+      </div>
+
+      <p class="text-wrapper-22">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+        enim ipsam voluptatem quia volupta
+      </p>
+
+
+
+      <div class="group-10">
+        <div class="rectangle-33"></div>
+        <div class="text-wrapper-80">Oblicz składkę</div>
+      </div>
+      <div class="rectangle-34"></div>
+      <div class="text-wrapper-81">Wyczyść dane</div>
+      <img class="group-11" src="img/group-64.png" />
+      <img class="group-12" src="img/group-63.png" />
+
+    </div>
+  </body>
+</html>
