@@ -30,8 +30,15 @@ async def serve_index():
     return HTMLResponse(content=html_path.read_text(encoding="utf-8"))
 
 # Strona wyników kalkulacji
-@app.post("/kalkulacja", response_class=HTMLResponse)
-async def handle_kalkulacja(
+
+from fastapi import FastAPI, Form
+from fastapi.responses import RedirectResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
+
+app = FastAPI()
+
+@app.post("/oferta")
+async def handle_oferta(
     first_name: str = Form(...),
     last_name: str = Form(...),
     license_plate: str = Form(...),
@@ -41,8 +48,16 @@ async def handle_kalkulacja(
     start_date: str = Form(...),
     insurance_formula: int = Form(...)
 ):
-    html_path = Path("frontend/kalkulacja.html")
-    return HTMLResponse(content=html_path.read_text(encoding="utf-8"))
+    # na razie ignorujemy dane z formularza (demo)
+    return RedirectResponse(
+        url="/oferty-ubezpieczeniowe/index.html",  # <-- wybierz właściwy katalog
+        status_code=303
+    )
+
+# UWAGA: mount na końcu, żeby nie przykrył /oferta
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
+
+
 
 # Nowa strona kalkulatora - formularza (formularz_do pracy.html)
 @app.get("/formularz", response_class=HTMLResponse)
