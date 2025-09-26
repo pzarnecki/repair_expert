@@ -8,7 +8,7 @@ from fastapi.responses import HTMLResponse
 from app.api.link4 import router as link4_router
 from pathlib import Path
 
-app = FastAPI(title="Insurance API")
+app = FastAPI(title="Aplikacja ubezpieczeniowa - wersja rozwojowa")
 
 # Middleware CORS
 app.add_middleware(
@@ -19,8 +19,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mountowanie folderu frontend jako statyczny
-app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
+# Montowanie całego katalogu `frontend`
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
 
 
 # Główna strona
