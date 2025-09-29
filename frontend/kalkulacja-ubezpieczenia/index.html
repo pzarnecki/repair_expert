@@ -14,78 +14,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 /*! This file is auto-generated */
 !function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
-
-<style>
-.insurance-form {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    font-family: 'Roboto', Arial, sans-serif;
-}
-
-.insurance-form h1 {
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: #0a1f44;
-}
-
-.insurance-form label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 500;
-    color: #333;
-    font-size: 0.95rem;
-}
-
-.insurance-form input,
-.insurance-form select {
-    width: 100%;
-    padding: 10px 14px;
-    margin-bottom: 18px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.insurance-form input:focus,
-.insurance-form select:focus {
-    outline: none;
-    border-color: #e63946;
-    box-shadow: 0 0 0 2px rgba(230,57,70,0.2);
-}
-
-.insurance-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #e63946;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.insurance-form button:hover {
-    background-color: #d62839;
-}
-
-.insurance-form #result {
-    margin-top: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #0a1f44;
-}
-</style>
-
-
 <style id="wp-emoji-styles-inline-css">
 
 	img.wp-smiley, img.emoji {
@@ -99,7 +27,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 		background: none !important;
 		padding: 0 !important;
 	}
-
 </style>
 <style id="global-styles-inline-css">
 :root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
@@ -119,7 +46,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel="stylesheet" id="widget-heading-css" href="/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.32.2" media="all">
 <link rel="stylesheet" id="widget-social-icons-css" href="/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.32.2" media="all">
 <link rel="stylesheet" id="e-apple-webkit-css" href="/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.32.2" media="all">
-<link rel="stylesheet" id="elementor-post-10-css" href="/wp-content/uploads/elementor/css/post-10.css?ver=1758878964" media="all">
+<link rel="stylesheet" id="elementor-post-10-css" href="/wp-content/uploads/elementor/css/post-10.css?ver=1758900792" media="all">
 <link rel="stylesheet" id="elementor-post-64-css" href="/wp-content/uploads/elementor/css/post-64.css?ver=1758842342" media="all">
 <link rel="stylesheet" id="elementor-post-77-css" href="/wp-content/uploads/elementor/css/post-77.css?ver=1758842343" media="all">
 <link rel="stylesheet" id="elementor-gf-roboto-css" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap&amp;subset=latin-ext" media="all">
@@ -258,47 +185,414 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 		<div class="elementor-element elementor-element-ee67d2c e-flex e-con-boxed e-con e-parent" data-id="ee67d2c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-038f259 e-con-full e-flex e-con e-child" data-id="038f259" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-b344bf8 elementor-widget elementor-widget-heading" data-id="b344bf8" data-element_type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default"></h2><!-- Miejce na kalkulator --!>
+				<div class="elementor-element elementor-element-f36636b elementor-widget elementor-widget-html" data-id="f36636b" data-element_type="widget" data-widget_type="html.default">
+					<div class="mm-form-wrap">
+  <form action="/oferta" method="post" class="mm-form" novalidate>
+    <!-- =================== PODSTAWOWE DANE =================== -->
+    <section class="mm-card">
+      <h2>Podstawowe dane</h2>
 
+      <!-- Numer rejestracyjny -->
+      <div class="mm-field">
+        <label for="plate" class="mm-label">Numer rejestracyjny</label>
+        <div class="mm-input-icon">
+          <svg aria-hidden="true" width="26" height="18" viewbox="0 0 26 18"><rect width="26" height="18" rx="8" fill="#122D4A"></rect><circle cx="9" cy="9" r="1.2" fill="#FFD700"></circle></svg>
+          <input id="plate" name="plate" type="text" placeholder="np. DW 12345" inputmode="text">
+        </div>
+        <label class="mm-check">
+          <input id="unknown-plate" type="checkbox">
+          <span>Nie znam nr rejestracyjnego</span>
+        </label>
+      </div>
 
-       <form action="/oferta" method="post" class="insurance-form">
-    <h1>Kalkulator ubezpieczenia<span style="color: green;"></span></h1>
+      <hr class="mm-sep">
 
-    <label for="first_name">Imię:</label>
-    <input type="text" id="first_name" name="first_name" required>
+      <!-- Data urodzenia -->
+      <div class="mm-field">
+        <label for="dob" class="mm-label">Data urodzenia</label>
+        <div class="mm-input-icon">
+          <span class="mm-cal" aria-hidden="true">📅</span>
+          <input id="dob" name="dob" type="date">
+        </div>
+      </div>
 
-    <label for="last_name">Nazwisko:</label>
-    <input type="text" id="last_name" name="last_name" required>
+      <!-- Zgody -->
+      <div class="mm-field">
+        <h3 class="mm-subtitle">Zgody</h3>
+        <label class="mm-check mm-bold">
+          <input id="consents-all" type="checkbox">
+          <span>Akceptuję wszystkie poniższe oświadczenia</span>
+        </label>
+        <div class="mm-consents">
+          <label class="mm-check">
+            <input class="consent-item" type="checkbox" name="c1">
+            <span>Akceptuję wszystkie poniższe oświadczenia</span>
+          </label>
+          <label class="mm-check">
+            <input class="consent-item" type="checkbox" name="c2">
+            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</span>
+          </label>
+          <label class="mm-check">
+            <input class="consent-item" type="checkbox" name="c3">
+            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
+          </label>
+        </div>
+      </div>
+    </section>
 
-    <label for="start_date">Data startu polisy:</label>
-    <input type="date" id="start_date" name="start_date" required>
+    <!-- =================== UBEZPIECZENIE =================== -->
+    <section class="mm-card">
+      <h2>Ubezpieczenie</h2>
 
-    <label for="license_plate">Numer rejestracyjny:</label>
-    <input type="text" id="license_plate" name="license_plate" required>
+      <!-- Typ pojazdu -->
+      <div class="mm-field">
+        <div class="mm-pill-group" role="radiogroup" aria-label="Typ pojazdu">
+          <input type="radio" id="veh-car" name="vehicle" value="car" checked>
+          <label for="veh-car" class="mm-pill"><span class="mm-ico">🚗</span> Samoch&oacute;d</label>
 
-    <label for="car_make">Marka pojazdu:</label>
-    <input type="text" id="car_make" name="car_make" required>
+          <input type="radio" id="veh-moto" name="vehicle" value="moto">
+          <label for="veh-moto" class="mm-pill"><span class="mm-ico">🏍️</span> Motocykl</label>
+        </div>
+      </div>
 
-    <label for="car_model">Model pojazdu:</label>
-    <input type="text" id="car_model" name="car_model" required>
+      <hr class="mm-sep">
 
-    <label for="car_year">Rok produkcji:</label>
-    <input type="number" id="car_year" name="car_year" required>
+      <!-- Zakres ubezpieczeń -->
+      <div class="mm-field">
+        <div class="mm-subtitle">Zaznacz wszystkie ubezpieczenia, kt&oacute;re Cię interesują</div>
+        <div class="mm-checkrow">
+          <label class="mm-check"><input type="checkbox" name="oc"><span>OC</span></label>
+          <label class="mm-check"><input type="checkbox" name="ac"><span>AC</span></label>
+          <label class="mm-check"><input type="checkbox" name="nnw"><span>NNW</span></label>
+          <label class="mm-check"><input type="checkbox" name="assist"><span>Assistance</span></label>
+        </div>
+      </div>
 
-    <label for="insurance_formula">Typ ubezpieczenia:</label>
-    <select id="insurance_formula" name="insurance_formula">
-        <option value="11">OC</option>
-        <option value="22">OC + AC</option>
-        <option value="33">OC + AC + Assistance</option>
-    </select>
+      <hr class="mm-sep">
 
-    <button type="submit">Znajdź polisę</button>
+      <!-- Leasing -->
+      <div class="mm-field">
+        <div class="mm-subtitle">Czy samoch&oacute;d jest w leasingu?</div>
+        <div class="mm-radio-col">
+          <label class="mm-radio"><input type="radio" name="leasing" value="yes"><span>Tak</span></label>
+          <label class="mm-radio"><input type="radio" name="leasing" value="no" checked><span>Nie</span></label>
+        </div>
+      </div>
+    </section>
 
+    <!-- =================== SZCZEG&Oacute;ŁY SAMOCHODU =================== -->
+    <section class="mm-card">
+      <h2>Szczeg&oacute;ły samochodu</h2>
 
-</form>
+      <!-- Pojazd (chips informacyjne + select z katalogu) -->
+      <div class="mm-field">
+        <label class="mm-label">Pojazd</label>
+        <div class="mm-chipbox">
+          <span class="mm-chip">2015</span>
+          <span class="mm-chip">AUDI</span>
+          <span class="mm-chip">A4</span>
+          <span class="mm-chip">Benzyna + gaz</span>
+        </div>
+        <p class="mm-help">Niekt&oacute;re towarzystwa ubezpieczeniowe korzystają z katalogu pojazd&oacute;w infoekspert. Wskaż sw&oacute;j pojazd w tym katalogu</p>
+        <div class="mm-select-wrap">
+          <select class="mm-select" name="vehicle_catalog">
+            <option value="">A4 Avant 2.0 TFSI</option>
+            <option>A4 Sedan 2.0 TFSI</option>
+            <option>A4 Avant 1.8 TFSI</option>
+          </select>
+        </div>
+      </div>
 
-                </div>
+      <!-- Data startu ubezpieczenia -->
+      <div class="mm-field">
+        <label for="start-date" class="mm-label">Data rozpoczęcia ubezpieczenia</label>
+        <div class="mm-input-icon">
+          <span class="mm-cal" aria-hidden="true">📅</span>
+          <input id="start-date" type="date" name="start_date">
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== UŻYTKOWANIE SAMOCHODU =================== -->
+    <section class="mm-card">
+      <h2>Użytkowanie samochodu</h2>
+
+      <div class="mm-field">
+        <div class="mm-subtitle">Jak korzystasz z samochodu?</div>
+        <div class="mm-radio-col">
+          <label class="mm-radio"><input type="radio" name="use" value="private" checked><span>Prywatnie (w tym dojazdy do pracy)</span></label>
+          <label class="mm-radio"><input type="radio" name="use" value="soleprop"><span>W ramach 1-os. działalności gospodarczej</span></label>
+          <label class="mm-radio"><input type="radio" name="use" value="other"><span>W inny spos&oacute;b (np. w firmie, przew&oacute;z os&oacute;b lub towar&oacute;w&hellip;)</span></label>
+        </div>
+      </div>
+
+      <hr class="mm-sep">
+
+      <!-- Licznik -->
+      <div class="mm-field">
+        <label for="odo" class="mm-label">Licznik</label>
+        <span class="mm-muted">Stan licznika w tys. km</span>
+        <input id="odo" class="mm-input" type="number" inputmode="numeric" placeholder="np. 100">
+      </div>
+
+      <!-- Roczny przebieg -->
+      <div class="mm-field">
+        <div class="mm-subtitle">Ile kilometr&oacute;w przejedzie samoch&oacute;d w ciągu najbliższych 12 miesięcy?</div>
+        <div class="mm-radio-col">
+          <label class="mm-radio"><input type="radio" name="mileage" value="lt5"><span>poniżej 5 tys. km</span></label>
+          <label class="mm-radio"><input type="radio" name="mileage" value="lt10"><span>do 10 tys. km</span></label>
+          <label class="mm-radio"><input type="radio" name="mileage" value="lt15"><span>do 15 tys. km</span></label>
+          <label class="mm-radio"><input type="radio" name="mileage" value="gt15" checked><span>powyżej 15 tys. km</span></label>
+        </div>
+      </div>
+
+      <!-- Data pierwszej rejestracji -->
+      <div class="mm-field">
+        <label for="first-reg" class="mm-label">Data pierwszej rejestracji</label>
+        <div class="mm-input-icon">
+          <span class="mm-cal" aria-hidden="true">📅</span>
+          <input id="first-reg" type="date" name="first_reg">
+        </div>
+      </div>
+
+      <!-- Od kiedy właściciel -->
+      <div class="mm-field">
+        <label for="owner-since" class="mm-label">Od kt&oacute;rego roku jesteś właścicielem auta?</label>
+        <div class="mm-select-wrap">
+          <select id="owner-since" class="mm-select">
+            <option value="">Wybierz</option>
+            <option>2025</option><option>2024</option><option>2023</option><option>2022</option>
+            <option>2021</option><option>2020</option><option>2019</option><option>2018</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Miejsce pierwszej rejestracji -->
+      <div class="mm-field">
+        <div class="mm-subtitle">Miejsce pierwszej rejestracji</div>
+        <div class="mm-radio-col">
+          <label class="mm-radio"><input type="radio" name="reg_place" value="pl" checked><span>Polska</span></label>
+          <label class="mm-radio"><input type="radio" name="reg_place" value="eu"><span>Europa</span></label>
+          <label class="mm-radio"><input type="radio" name="reg_place" value="us"><span>USA/Kanada</span></label>
+          <label class="mm-radio"><input type="radio" name="reg_place" value="other"><span>Inne</span></label>
+        </div>
+      </div>
+
+      <!-- Ostatni ubezpieczyciel -->
+      <div class="mm-field">
+        <label for="last-ins" class="mm-label">Ostatni ubezpieczyciel tego samochodu</label>
+        <div class="mm-select-wrap">
+          <select id="last-ins" class="mm-select">
+            <option value="">Wybierz</option>
+            <option>LINK4</option><option>Warta</option><option>PZU</option><option>Compensa</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== WŁAŚCICIEL I DODATKOWI KIEROWCY =================== -->
+    <section class="mm-card">
+      <h2>Właściciel i dodatkowi kierowcy</h2>
+
+      <div class="mm-note">
+        <strong>Jak to działa?</strong> Niekt&oacute;re towarzystwa (np. Generali, Proama) proszą o dane osobowe, aby przedstawić ofertę. Dane służą wyłącznie do sprawdzenia historii ubezpieczenia.
+      </div>
+
+      <div class="mm-field">
+        <div class="mm-subtitle">Czy chcesz podać dane osobowe, aby uzyskać więcej ofert?</div>
+        <div class="mm-radio-col">
+          <label class="mm-radio"><input type="radio" name="more_offers" value="yes"><span>Tak, chcę zwiększyć swoje szanse na tańsze oferty</span></label>
+          <label class="mm-radio"><input type="radio" name="more_offers" value="no" checked><span>Nie, wybieram mniejszą liczbę ofert</span></label>
+        </div>
+      </div>
+
+      <!-- Dane właściciela (skr&oacute;t) -->
+      <div class="mm-field">
+        <label for="b-cat" class="mm-label">Kiedy właściciel uzyskał prawo jazdy kat. B?</label>
+        <div class="mm-select-wrap">
+          <select id="b-cat" class="mm-select">
+            <option>Wybierz</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option>
+          </select>
+        </div>
+        <label class="mm-check"><input type="checkbox" id="no-b"><span>Nie posiada prawa jazdy kat. B</span></label>
+      </div>
+
+      <!-- Adres zameldowania -->
+      <div class="mm-field">
+        <h3 class="mm-subtitle">Kod pocztowy i miejscowość zameldowania właściciela</h3>
+        <div class="mm-grid-2">
+          <div>
+            <label class="mm-label" for="zip-reg">Kod pocztowy zameldowania właściciela</label>
+            <input id="zip-reg" class="mm-input" type="text" placeholder="00-000">
+          </div>
+          <div>
+            <label class="mm-label" for="city-reg">Miejscowość zameldowania właściciela</label>
+            <div class="mm-select-wrap">
+              <select id="city-reg" class="mm-select">
+                <option>Wybierz</option><option>Warszawa</option><option>Wrocław</option><option>Krak&oacute;w</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <label class="mm-check">
+          <input type="checkbox" id="addr-diff">
+          <span>Adres zamieszkania jest inny niż zameldowania</span>
+        </label>
+      </div>
+
+      <!-- Adres zamieszkania (toggle) -->
+      <div id="addr-live" class="mm-field" hidden>
+        <h3 class="mm-subtitle">Kod pocztowy zamieszkania właściciela</h3>
+        <div class="mm-grid-2">
+          <div>
+            <label class="mm-label" for="zip-live">Kod pocztowy zamieszkania właściciela</label>
+            <input id="zip-live" class="mm-input" type="text" placeholder="00-000">
+          </div>
+          <div>
+            <label class="mm-label" for="city-live">Miejscowość zamieszkania właściciela</label>
+            <div class="mm-select-wrap">
+              <select id="city-live" class="mm-select">
+                <option>Wybierz</option><option>Warszawa</option><option>Wrocław</option><option>Krak&oacute;w</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dodatkowi właściciele / kierowcy -->
+      <div class="mm-field">
+        <div class="mm-subtitle">Ilu jest dodatkowych właścicieli auta?</div>
+        <div class="mm-radio-col">
+          <label class="mm-radio"><input type="radio" name="owners_count" value="0" checked><span>0</span></label>
+          <label class="mm-radio"><input type="radio" name="owners_count" value="1"><span>1</span></label>
+          <label class="mm-radio"><input type="radio" name="owners_count" value="2plus"><span>2 i więcej</span></label>
+        </div>
+      </div>
+
+      <div class="mm-field">
+        <div class="mm-subtitle">Czy są dodatkowi kierowcy poniżej 26 roku życia?</div>
+        <div class="mm-radio-col">
+          <label class="mm-radio"><input type="radio" name="young_drivers" value="yes"><span>Tak</span></label>
+          <label class="mm-radio"><input type="radio" name="young_drivers" value="no" checked><span>Nie</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== HISTORIA & KONTAKT =================== -->
+    <section class="mm-card">
+      <h2>Historia ubezpieczenia właściciela</h2>
+      <div class="mm-field">
+        <label class="mm-label" for="oc-years">Od ilu lat właściciel kupuje OC dla swoich samochod&oacute;w?</label>
+        <div class="mm-select-wrap">
+          <select class="mm-select" id="oc-years">
+            <option>Wybierz</option><option>0</option><option>1</option><option>2</option><option>3+</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="mm-card">
+      <h2>Dane kontaktowe do obsługi polisy</h2>
+
+      <div class="mm-info">
+        <div class="mm-info-ico">🛡️</div>
+        <div>
+          <strong>Na podany telefon oraz e-mail wyślemy link do Twojej kalkulacji.</strong><br>
+          Twoje dane są bezpieczne i nie przekażemy ich do innych firm.
+        </div>
+      </div>
+
+      <div class="mm-field">
+        <label for="phone" class="mm-label">Numer telefonu</label>
+        <div class="mm-input-icon">
+          <span class="mm-ico-in">+48</span>
+          <input id="phone" name="phone" type="tel" placeholder="123 456 789">
+        </div>
+      </div>
+
+      <div class="mm-field">
+        <label for="email" class="mm-label">Adres e-mail</label>
+        <div class="mm-input-icon">
+          <span class="mm-mail" aria-hidden="true">✉️</span>
+          <input id="email" name="email" type="email" placeholder="Pole nieobowiązkowe">
+        </div>
+      </div>
+    </section>
+
+    <!-- Akcje -->
+    <div class="mm-actions">
+      <button type="submit" class="mm-btn mm-btn-primary">Dalej</button>
+      <button type="button" class="mm-btn mm-btn-ghost">Zapisz i wr&oacute;ć p&oacute;źniej</button>
+    </div>
+  </form>
+</div>
+
+<style>
+  :root{
+    --txt:#002236; --muted:#5A6B75;
+    --accent:#EB0F20;
+    --border:#E9EEF2; --border2:#D9D9D9;
+    --bg:#F3F6F8; --ok:#23C16B;
+  }
+  .mm-form-wrap{background:var(--bg);padding:1rem;border-radius:12px}
+  .mm-form{font-family:"Nata Sans",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--txt);display:flex;flex-direction:column;gap:1.25rem}
+  .mm-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:1.25rem}
+  .mm-card h2{font-size:2rem;font-weight:600;color:var(--txt);margin:.25rem 0 1rem}
+  .mm-subtitle{font-weight:700;margin:.25rem 0 .25rem}
+  .mm-muted{color:var(--muted);font-size:.95rem}
+  .mm-help{color:var(--muted);margin:.35rem 0 .5rem}
+  .mm-field{display:flex;flex-direction:column;gap:.5rem;margin:.5rem 0}
+  .mm-label{font-weight:600}
+  .mm-sep{border:none;border-top:1px solid var(--border);margin:1rem 0}
+
+  /* Inputs */
+  .mm-input, .mm-select, .mm-form input[type="date"], .mm-form input[type="text"], .mm-form input[type="email"], .mm-form input[type="tel"], .mm-form input[type="number"]{
+    width:100%;padding:.8rem 1rem;border:1px solid var(--border2);border-radius:12px;background:#fff;
+    font-size:1rem;line-height:1.4;color:var(--txt)
+  }
+  .mm-input:focus, .mm-select:focus, .mm-form input:focus{outline:none;box-shadow:0 0 0 3px rgba(0,34,54,.08)}
+
+  /* Input z ikoną */
+  .mm-input-icon{position:relative;display:flex;align-items:center}
+  .mm-input-icon svg,.mm-input-icon .mm-cal,.mm-input-icon .mm-mail{position:absolute;right:.8rem;opacity:.85}
+  .mm-ico-in{position:absolute;left:.8rem;opacity:.85}
+  .mm-input-icon input{padding:.8rem 2.2rem .8rem 2.6rem}
+  .mm-input-icon input#plate{padding-left:3rem}
+  .mm-input-icon .mm-cal{right:.8rem}
+  .mm-input-icon .mm-mail{left:.8rem}
+  #phone + input, .mm-input-icon #phone{padding-left:3.2rem}
+
+  /* Checkboxy */
+  .mm-check{display:inline-flex;align-items:center;gap:.55rem;cursor:pointer;user-select:none}
+  .mm-check input{width:1.1rem;height:1.1rem;border:1px solid var(--border2);border-radius:4px;appearance:none;background:#fff;position:relative}
+  .mm-check input:checked{background:#F2FBF4;border-color:#B9E2C4}
+  .mm-check input:checked::after{content:"";position:absolute;inset:2px 3px 3px 2px;border:2px solid var(--ok);border-top:none;border-left:none;transform:rotate(45deg)}
+  .mm-check.mm-bold span{font-weight:700}
+  .mm-consents{background:#F7F9FB;border:1px solid var(--border);border-radius:12px;padding:.9rem 1rem;display:flex;flex-direction:column;gap:.55rem}
+
+  .mm-checkrow{display:flex;gap:1rem;flex-wrap:wrap}
+
+  /* Radiobuttony klasyczne */
+  .mm-radio-col{display:flex;flex-direction:column;gap:.4rem}
+  .mm-radio{display:inline-flex;align-items:center;gap:.5rem;cursor:pointer}
+  .mm-radio input{width:1.15rem;height:1.15rem;border-radius:50%;border:2px solid var(--border2);appearance:none;background:#fff;position:relative}
+  .mm-radio input:checked{border-color:var(--accent)}
+  .mm-radio input:checked::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--accent)}
+
+  /* Pigułki (radio) */
+  .mm-pill-group{display:flex;gap:.75rem;flex-wrap:wrap}
+  .mm-pill-group input{position:absolute;opacity:0;pointer-events:none}
+  .mm-pill{border:1px solid var(--border2);border-radius:12px;padding:.7rem 1rem;display:inline-flex;gap:.5rem;align-items:center;cursor:pointer}
+  #veh-car:checked + label, #veh-moto:checked + label{border-color:var(--accent);box-shadow:0 0 0 3px rgba(235,15,32,.1)}
+  .mm-ico{font-size:1.1rem}
+
+  /* Select (custom arrow) */
+  .mm-select-wrap{position:relative}
+  .mm-select{
+    appearance:none;-webkit-appearance:none;-moz-appearance:none;
+    padding:.8rem 2.8rem .8rem 1rem;background:#fff;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23002236' stroke-width='2' stroke-
+				</style></div>
 				</div>
 					</div>
 				</div>
@@ -415,7 +709,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.32.2" id="elementor-frontend-modules-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Udost\u0119pnij na Facebooku","shareOnTwitter":"Udost\u0119pnij na X","pinIt":"Przypnij","download":"Pobierz","downloadImage":"Pobierz obrazek","fullscreen":"Tryb pe\u0142noekranowy","zoom":"Powi\u0119ksz","share":"Udost\u0119pnij","playVideo":"Odtw\u00f3rz wideo","previous":"Poprzednie","next":"Nast\u0119pne","close":"Zamknij","a11yCarouselPrevSlideMessage":"Poprzedni slajd","a11yCarouselNextSlideMessage":"Nast\u0119pny slajd","a11yCarouselFirstSlideMessage":"To jest pierwszy slajd","a11yCarouselLastSlideMessage":"To jest ostatni slajd","a11yCarouselPaginationBulletMessage":"Id\u017a do slajdu"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobilny pionowy","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobilny poziomy","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Pionowy tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Poziomy tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Szeroki ekran","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.32.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"e_pro_free_trial_popup":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"c08d19a7b2"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":10,"title":"Kalkulacja%20ubezpieczenia%20%E2%80%93%20Oblicz%20Ubezpieczenie","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Udost\u0119pnij na Facebooku","shareOnTwitter":"Udost\u0119pnij na X","pinIt":"Przypnij","download":"Pobierz","downloadImage":"Pobierz obrazek","fullscreen":"Tryb pe\u0142noekranowy","zoom":"Powi\u0119ksz","share":"Udost\u0119pnij","playVideo":"Odtw\u00f3rz wideo","previous":"Poprzednie","next":"Nast\u0119pne","close":"Zamknij","a11yCarouselPrevSlideMessage":"Poprzedni slajd","a11yCarouselNextSlideMessage":"Nast\u0119pny slajd","a11yCarouselFirstSlideMessage":"To jest pierwszy slajd","a11yCarouselLastSlideMessage":"To jest ostatni slajd","a11yCarouselPaginationBulletMessage":"Id\u017a do slajdu"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobilny pionowy","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobilny poziomy","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Pionowy tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Poziomy tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Szeroki ekran","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.32.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"e_pro_free_trial_popup":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"7cdfca2191"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":10,"title":"Kalkulacja%20ubezpieczenia%20%E2%80%93%20Oblicz%20Ubezpieczenie","excerpt":"","featuredImage":false}};
 </script>
 <script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.32.2" id="elementor-frontend-js"></script>
 <script src="/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
@@ -427,7 +721,7 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
 <script id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"4350b14e30","urls":{"assets":"\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pl_PL","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"04c3d48956","urls":{"assets":"\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pl_PL","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 </script>
 <script src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.32.1" id="elementor-pro-frontend-js"></script>
 <script src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.32.1" id="pro-elements-handlers-js"></script>
