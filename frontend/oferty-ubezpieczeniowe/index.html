@@ -46,8 +46,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel="stylesheet" id="widget-heading-css" href="/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.32.2" media="all">
 <link rel="stylesheet" id="widget-social-icons-css" href="/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.32.2" media="all">
 <link rel="stylesheet" id="e-apple-webkit-css" href="/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.32.2" media="all">
-<link rel="stylesheet" id="widget-divider-css" href="/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.32.2" media="all">
-<link rel="stylesheet" id="elementor-post-11-css" href="/wp-content/uploads/elementor/css/post-11.css?ver=1758878964" media="all">
+<link rel="stylesheet" id="elementor-post-11-css" href="/wp-content/uploads/elementor/css/post-11.css?ver=1758900866" media="all">
 <link rel="stylesheet" id="elementor-post-64-css" href="/wp-content/uploads/elementor/css/post-64.css?ver=1758842342" media="all">
 <link rel="stylesheet" id="elementor-post-77-css" href="/wp-content/uploads/elementor/css/post-77.css?ver=1758842343" media="all">
 <link rel="stylesheet" id="elementor-gf-roboto-css" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap&amp;subset=latin-ext" media="all">
@@ -199,32 +198,82 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-0669cdd custom-icon-size elementor-widget__width-inherit elementor-widget elementor-widget-button" data-id="0669cdd" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-0669cdd custom-icon-size elementor-widget__width-inherit elementor-widget-tablet__width-auto elementor-widget elementor-widget-button" data-id="0669cdd" data-element_type="widget" data-widget_type="button.default">
 										<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">Zmień dane</span>
 					</span>
 					</a>
 								</div>
+				<div class="elementor-element elementor-element-978c9c8 elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="978c9c8" data-element_type="widget" data-widget_type="html.default">
+					<div class="mm-select-wrap">
+  <label for="mm-select">Sortuj:</label>
+  <select id="mm-select" class="mm-select">
+    <option>Wybierz opcję</option>
+    <option>Od najtańszych</option>
+    <option>Od najdroższych</option>
+  </select>
+</div>
+
+<style>
+  /* Wrapper */
+  .mm-select-wrap{
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+    font-family: "Nata Sans", sans-serif;
+    color:#002236;
+    font-size:1rem;
+  }
+
+  .mm-select-wrap label{
+    font-weight:500;
+  }
+
+  /* Select */
+  .mm-select{
+    font-family: "Nata Sans", sans-serif;
+    font-size:1rem;
+    line-height:1.4;
+    color:#002236;
+    padding:.5rem 2.5rem .5rem 1rem;
+    border:1px solid #D9D9D9;     /* obramowanie */
+    border-radius:12px;
+    background:#fff;
+
+    /* własna strzałka */
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/>");
+    background-repeat:no-repeat;
+    background-position:right .9rem center;
+    background-size:18px 18px;
+  }
+
+  /* Focus/hover (opcjonalnie) */
+  .mm-select:focus{
+    outline:none;
+    border-color:#D9D9D9;
+  }
+</style>
 				</div>
-				<div class="elementor-element elementor-element-ff3113a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="ff3113a" data-element_type="widget" data-widget_type="divider.default">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				<div class="elementor-element elementor-element-b24929c elementor-widget elementor-widget-heading" data-id="b24929c" data-element_type="widget" data-widget_type="heading.default">
-					<h4 class="elementor-heading-title elementor-size-default">Filtruj:</h4>				</div>
+				</div>
 				</div>
 					</div>
 				</div>
 		<div class="elementor-element elementor-element-ec088d3 e-flex e-con-boxed e-con e-parent" data-id="ec088d3" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e4a1078 e-con-full e-flex e-con e-child" data-id="e4a1078" data-element_type="container">
 				<div class="elementor-element elementor-element-c41a1ac elementor-widget elementor-widget-heading" data-id="c41a1ac" data-element_type="widget" data-widget_type="heading.default">
-					<h4 class="elementor-heading-title elementor-size-default">12 ofert <span style="color:#002236">pasujących do Twojego wyszukiwania</span></h4>				</div>
+					<h4 class="elementor-heading-title elementor-size-default">12 ofert</h4>				</div>
+				<div class="elementor-element elementor-element-4f81942 elementor-widget elementor-widget-heading" data-id="4f81942" data-element_type="widget" data-widget_type="heading.default">
+					<h4 class="elementor-heading-title elementor-size-default">pasujących do Twojego wyszukiwania</h4>				</div>
+				</div>
 		<div class="elementor-element elementor-element-0d274e3 e-con-full e-flex e-con e-child" data-id="0d274e3" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-0b611e1 elementor-widget elementor-widget-image" data-id="0b611e1" data-element_type="widget" data-widget_type="image.default">
-															</div>
+															<img decoding="async" width="800" height="235" src="/wp-content/uploads/2025/09/logo_link4-%E2%80%94-kopia-2-1024x301.png" class="attachment-large size-large wp-image-105" alt="" srcset="/wp-content/uploads/2025/09/logo_link4-&mdash;-kopia-2-1024x301.png 1024w, /wp-content/uploads/2025/09/logo_link4-&mdash;-kopia-2-300x88.png 300w, /wp-content/uploads/2025/09/logo_link4-&mdash;-kopia-2-768x225.png 768w, /wp-content/uploads/2025/09/logo_link4-&mdash;-kopia-2.png 1141w" sizes="(max-width: 800px) 100vw, 800px">															</div>
 		<div class="elementor-element elementor-element-c345519 e-con-full e-flex e-con e-child" data-id="c345519" data-element_type="container">
 				<div class="elementor-element elementor-element-47c0039 elementor-widget elementor-widget-text-editor" data-id="47c0039" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Zakres ubezpieczenia:</p>								</div>
@@ -257,98 +306,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 				<div class="elementor-element elementor-element-72e2cf5 elementor-widget elementor-widget-text-editor" data-id="72e2cf5" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Cena:</p>								</div>
 				<div class="elementor-element elementor-element-b7f59ba elementor-widget elementor-widget-heading" data-id="b7f59ba" data-element_type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default"></h2><!--tu był nagłówek --!>
-
-              <section id="offers" class="offers-section">
-    <h2>Dostępne oferty</h2>
-    <table class="offers-table">
-        <thead>
-            <tr>
-                <th>Logo firmy</th>
-                <th>Marka pojazdu</th>
-                <th>Zakres ubezpieczenia</th>
-                <th>Suma ubezpieczenia</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody id="offers-body">
-            <!-- oferty zostaną wstawione dynamicznie -->
-        </tbody>
-    </table>
-</section>
-
-<style>
-    .offers-section {
-        max-width: 900px;
-        margin: 40px auto;
-        background: #fff;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    .offers-section h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #002236;
-    }
-    .offers-table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    .offers-table th, .offers-table td {
-        padding: 12px 16px;
-        border-bottom: 1px solid #ddd;
-        text-align: center;
-    }
-    .offers-table th {
-        background-color: #f8f8f8;
-        font-weight: 600;
-    }
-    .offers-table tr:hover {
-        background-color: #f9f9f9;
-    }
-    .offers-table button {
-        padding: 8px 16px;
-        background: #eb0f20;
-        border: none;
-        color: #fff;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background 0.2s;
-    }
-    .offers-table button:hover {
-        background: #c00d1a;
-    }
-</style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const tbody = document.getElementById("offers-body");
-        const brands = ["PZU", "Warta", "Allianz", "Link4", "Generali", "Uniqa"];
-        const coverages = ["OC", "AC", "OC + AC", "OC + AC + Assistance"];
-        const carMake = localStorage.getItem("car_make") || "Twój samochód";
-
-        for (let i = 0; i < 12; i++) {
-            const brand = brands[Math.floor(Math.random() * brands.length)];
-            const coverage = coverages[Math.floor(Math.random() * coverages.length)];
-            const price = (Math.random() * 1500 + 500).toFixed(2) + " PLN";
-
-            const row = `
-                <tr>
-                    <td><strong>Logo ${brand}</strong></td>
-                    <td>${carMake}</td>
-                    <td>${coverage}</td>
-                    <td>${price}</td>
-                    <td><button>Zamów</button></td>
-                </tr>
-            `;
-            tbody.innerHTML += row;
-        }
-    });
-</script>
-
-
-                </div>
+					<h2 class="elementor-heading-title elementor-size-default">1500zł</h2>				</div>
 				</div>
 		<div class="elementor-element elementor-element-8ee11b9 e-con-full e-flex e-con e-child" data-id="8ee11b9" data-element_type="container">
 				<div class="elementor-element elementor-element-b2fa306 custom-icon-size elementor-align-justify elementor-widget__width-inherit elementor-widget elementor-widget-button" data-id="b2fa306" data-element_type="widget" data-widget_type="button.default">
@@ -482,7 +440,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.32.2" id="elementor-frontend-modules-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Udost\u0119pnij na Facebooku","shareOnTwitter":"Udost\u0119pnij na X","pinIt":"Przypnij","download":"Pobierz","downloadImage":"Pobierz obrazek","fullscreen":"Tryb pe\u0142noekranowy","zoom":"Powi\u0119ksz","share":"Udost\u0119pnij","playVideo":"Odtw\u00f3rz wideo","previous":"Poprzednie","next":"Nast\u0119pne","close":"Zamknij","a11yCarouselPrevSlideMessage":"Poprzedni slajd","a11yCarouselNextSlideMessage":"Nast\u0119pny slajd","a11yCarouselFirstSlideMessage":"To jest pierwszy slajd","a11yCarouselLastSlideMessage":"To jest ostatni slajd","a11yCarouselPaginationBulletMessage":"Id\u017a do slajdu"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobilny pionowy","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobilny poziomy","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Pionowy tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Poziomy tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Szeroki ekran","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.32.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"e_pro_free_trial_popup":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"c08d19a7b2"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":11,"title":"Oferty%20ubezpieczeniowe%20%E2%80%93%20Oblicz%20Ubezpieczenie","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Udost\u0119pnij na Facebooku","shareOnTwitter":"Udost\u0119pnij na X","pinIt":"Przypnij","download":"Pobierz","downloadImage":"Pobierz obrazek","fullscreen":"Tryb pe\u0142noekranowy","zoom":"Powi\u0119ksz","share":"Udost\u0119pnij","playVideo":"Odtw\u00f3rz wideo","previous":"Poprzednie","next":"Nast\u0119pne","close":"Zamknij","a11yCarouselPrevSlideMessage":"Poprzedni slajd","a11yCarouselNextSlideMessage":"Nast\u0119pny slajd","a11yCarouselFirstSlideMessage":"To jest pierwszy slajd","a11yCarouselLastSlideMessage":"To jest ostatni slajd","a11yCarouselPaginationBulletMessage":"Id\u017a do slajdu"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobilny pionowy","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobilny poziomy","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Pionowy tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Poziomy tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Szeroki ekran","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.32.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"e_pro_free_trial_popup":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"7cdfca2191"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":11,"title":"Oferty%20ubezpieczeniowe%20%E2%80%93%20Oblicz%20Ubezpieczenie","excerpt":"","featuredImage":false}};
 </script>
 <script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.32.2" id="elementor-frontend-js"></script>
 <script src="/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
@@ -494,7 +452,7 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
 <script id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"4350b14e30","urls":{"assets":"\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pl_PL","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"04c3d48956","urls":{"assets":"\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pl_PL","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 </script>
 <script src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.32.1" id="elementor-pro-frontend-js"></script>
 <script src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.32.1" id="pro-elements-handlers-js"></script>
